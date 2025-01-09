@@ -342,7 +342,7 @@ const Calendar = () => {
                 {day}
               </div>
             ))}
-            {daysInMonth.map((day, index) => (
+            {daysInMonth.map((day, _index) => (
               <Droppable
                 key={day.toISOString()}
                 droppableId={day.toISOString()}
