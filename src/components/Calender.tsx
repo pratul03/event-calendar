@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -24,7 +25,7 @@ import {
   DialogTitle,
   DialogFooter,
 } from "./ui/dialog";
-import { Edit2Icon, Trash2Icon, Menu, X, MenuSquare } from "lucide-react"; // Import X icon for close button
+import { Edit2Icon, Trash2Icon, X, MenuSquare } from "lucide-react"; // Import X icon for close button
 import { toast, Toaster } from "sonner";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { SketchPicker } from "react-color";
@@ -148,6 +149,7 @@ const Calendar = () => {
     setIsDialogOpen(true);
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleDragEnd = (result: any) => {
     if (!result.destination) return;
 
