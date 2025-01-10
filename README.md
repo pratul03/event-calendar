@@ -76,7 +76,7 @@ A fully interactive calendar application built with React, TypeScript, and date-
 
 ## Deployed App
 
-You can access the deployed version of the app here: **[Deployed App Link](#)**  
+You can access the deployed version of the app here: **[Deployed App Link](https://event-calendar-d6xn.vercel.app/)**  
 *(Replace this with the actual link once deployed.)*
 
 ## Screenshots
