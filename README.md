@@ -82,13 +82,13 @@ You can access the deployed version of the app here: **[Deployed App Link](#)**
 ## Screenshots
 
 ### Calendar View
-![Calendar View](src\assets\calender.png)
+![Calendar View](src/assets/calender.png)
 
 ### Event Dialog
-![Event Dialog](src\assets\dialouge.png)
+![Event Dialog](src/assets/dialouge.png)
 
 ### Sidebar
-![Sidebar](src\assets\sidebar.png)
+![Sidebar](src/assets/sidebar.png)
 
 ## Contributing
 
