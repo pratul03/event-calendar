@@ -1,50 +1,104 @@
-# React + TypeScript + Vite
+# Event Calendar Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully interactive calendar application built with React, TypeScript, and date-fns. This app allows users to create, edit, delete, and drag-and-drop events on a calendar. It also includes features like event color customization, exporting events as JSON or CSV, and a responsive sidebar for easy navigation.
 
-Currently, two official plugins are available:
+## Table of Contents
+1. [Features](#features)  
+2. [Technologies Used](#technologies-used)  
+3. [Installation](#installation)  
+4. [Available Scripts](#available-scripts)  
+5. [Deployed App](#deployed-app)  
+6. [Screenshots](#screenshots)  
+7. [Contributing](#contributing)  
+8. [License](#license)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Interactive Calendar:** View events by day, week, or month.  
+- **Event Management:**  
+  - Add, edit, and delete events.  
+  - Drag-and-drop events to reschedule them.  
+  - Customize event colors using a color picker.  
+- **Responsive Sidebar:**  
+  - Mini calendar for quick navigation.  
+  - List of all events with details.  
+- **Export Options:** Export events as JSON or CSV for the current month.  
+- **Dark/Light Mode:** Toggle between themes using the ModeToggle button.  
+- **Local Storage:** Events are saved in the browser's local storage for persistence.  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React:** Frontend library for building the user interface.  
+- **TypeScript:** Adds type safety to the codebase.  
+- **date-fns:** Date utility library for handling dates and times.  
+- **React Beautiful DnD:** Enables drag-and-drop functionality for events.  
+- **Sonner:** Toast notifications for user feedback.  
+- **Tailwind CSS:** Utility-first CSS framework for styling.  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
+- Node.js (v16 or higher)  
+- npm or yarn  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Steps
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/event-calendar.git
+   cd event-calendar
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. **Open the app:**
+   - The app should automatically open in your default browser at `http://localhost:3000`.  
+   - If it doesn't, manually navigate to the URL.  
+
+## Available Scripts
+
+- `npm start`: Runs the app in development mode.  
+- `npm build`: Builds the app for production.  
+- `npm test`: Runs the test suite.  
+- `npm eject`: Ejects the app from Create React App (use with caution).  
+
+## Deployed App
+
+You can access the deployed version of the app here: **[Deployed App Link](#)**  
+*(Replace this with the actual link once deployed.)*
+
+## Screenshots
+
+### Calendar View
+![Calendar View](#)
+
+### Event Dialog
+![Event Dialog](#)
+
+### Sidebar
+![Sidebar](#)
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. **Fork** the repository.  
+2. **Create a new branch** for your feature or bugfix.  
+3. **Commit** your changes.  
+4. **Push** your branch and submit a **pull request**.  
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
