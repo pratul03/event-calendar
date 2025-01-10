@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -342,11 +341,8 @@ const Calendar = () => {
                 {day}
               </div>
             ))}
-            {daysInMonth.map((day, _index) => (
-              <Droppable
-                key={day.toISOString()}
-                droppableId={day.toISOString()}
-              >
+            {daysInMonth.map((day, index) => (
+              <Droppable key={index} droppableId={day.toISOString()}>
                 {(provided) => (
                   <div
                     ref={provided.innerRef}
