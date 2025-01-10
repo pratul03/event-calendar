@@ -24,7 +24,7 @@ import {
   DialogTitle,
   DialogFooter,
 } from "./ui/dialog";
-import { Edit2Icon, Trash2Icon, X, MenuSquare } from "lucide-react"; // Import X icon for close button
+import { Edit2Icon, Trash2Icon, X, MenuSquare } from "lucide-react";
 import { toast, Toaster } from "sonner";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { SketchPicker } from "react-color";
@@ -225,6 +225,7 @@ const Calendar = () => {
       <Button
         className="fixed top-4 left-4 z-50 mb-4 rounded-sm shadow-lg bg-transparent hover:bg-gray-100/20"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        style={{ zIndex: 1000 }}
       >
         <MenuSquare size={28} className="dark:text-white text-black" />
       </Button>
